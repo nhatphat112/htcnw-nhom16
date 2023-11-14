@@ -1,0 +1,40 @@
+#form-contact{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item input,.item textarea{
+    width: 100%;
+    margin: 2% 0px;
+    height: 19%;
+    padding: 13px;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+.item{
+    height: 100%;
+}
+.item textarea{
+    height: 170px;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+}
+.btn-submit button{
+    background-color: red;
+    color: white;
+    height: 42px;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+.btn-submit button:hover{
+   background-color: rgb(161, 15, 15);
+}
+@media (max-width:1000px) {
+    .btn-submit {
+        width: 100% ;
+    }
+}

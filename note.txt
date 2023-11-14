@@ -1,0 +1,6 @@
+name : elec2T
+custom form contact
+Blog: xem blog các page
+bỏ top header, chèn signin vào nav
+sửa copyright, bỏ phone
+Thay review bằng member
