@@ -1,0 +1,12 @@
+td{
+    padding: 0 !important;
+    text-align: center;
+}
+thead td{
+    text-transform: uppercase;
+}
+#table{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}

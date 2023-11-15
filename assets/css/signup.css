@@ -46,9 +46,13 @@
     font-size: 16px;
     margin-left: 2%;
 }
+.last-line-item{
+   display: flex;
+}
 .last-line-item input{
     width: 20px;
     height: 20px;
+
 }
 #btn-sign-up{
     color: white;
