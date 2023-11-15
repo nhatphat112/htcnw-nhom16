@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
-        <title>Directory Landing Page</title>
+        <title>Product</title>
 		<link rel="shortcut icon" type="image/icon" href="/assets/logo/logo.jpg"/>
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/linearicons.css">
@@ -101,12 +101,19 @@
 					<h2>Product</h2>
 					<p>Electric 2T</p>
 				</div>
+				<div class="control">
+					<button class="active" type="all">All</button>
+					<button type="keyboard">Keboard</button>
+					<button type="loudspeaker">Loudspeaker</button>
+					<button type="mic">Mic Streaming</button>
+					<button type="mouse">Mouse</button>
+				</div>
 				<div class="explore-content">
 					<div class="row">
-						<div class=" col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-6" id="product" type="keyboard">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/key-board-DareU-EK87-490.jpeg" height="25" alt="explore image">
+									<img src="assets/images/explore/key-board-DareU-EK87-490.jpeg" type="keyboard" height="25" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -134,7 +141,7 @@
 											Price
 											<span class="explore-price">47$</span>
 										</span>
-										 <a href="#">Keboard</a>
+										 <a href="#">Keyboard</a>
 									</p>
 									<div class="explore-open-close-part">
 										<div class="row">
@@ -153,10 +160,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-6" id="product" type="loudspeaker">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg" alt="explore image">
+									<img src="assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg" type="loudspeaker" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -203,10 +210,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-6" id="product" type="mic">
 							<div class="single-explore-item">
 								<div class="single-explore-img" style="height: 359px;">
-									<img src="assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png" alt="explore image">
+									<img src="assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png" type="mic" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -253,10 +260,10 @@
 								</div>
 							</div>
 						</div>
-						<div class=" col-md-4 col-sm-6">
+						<div class=" col-md-4 col-sm-6" id="product" type="mouse">
 							<div class="single-explore-item">
 								<div class="single-explore-img" style="height: 359px;">
-									<img src="assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg" alt="explore image">
+									<img src="assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg" type="mouse" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">most view</button>
 										<div class="single-explore-image-icon-box">
@@ -303,10 +310,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-6" id="product" type="loudspeaker">
 							<div class="single-explore-item">
 								<div class="single-explore-img" style="height: 359px;">
-									<img src="assets/images/explore/krk.png" alt="explore image">
+									<img src="assets/images/explore/krk.png" type="loudspeaker" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -353,10 +360,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6">
+						<div class="col-md-4 col-sm-6" id="product" type="loudspeaker">
 							<div class="single-explore-item">
 								<div class="single-explore-img" style="height: 359px;">
-									<img src="./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg" alt="explore image">
+									<img src="./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg" type="loudspeaker" alt="explore image">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -443,7 +450,8 @@
 		<script src="assets/js/waypoints.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>		     
-        <script src="assets/js/custom.js"></script>        
+        <script src="/assets/js/custom.js"></script>
+		<script src="/assets/js/product.js"></script>
     </body>
 	
 </html>

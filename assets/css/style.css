@@ -443,6 +443,28 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .explore-content{margin-top: 78px;}
 
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control button{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border: #ff545a 2px solid;
+    color: #ff545a;
+    width: 130px;
+    border-radius: 45%;
+}
+.control button:hover{
+    color: white;
+    background-color: #ff545a;
+}
+.control button.active{
+    color: white;
+    background-color: #ff545a;
+}
+
 .single-explore-item {
     background: #fff;
     border: 1px solid #edeff1;
@@ -579,6 +601,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover{color: #00c437;}
 .single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
 
+.hide{
+    display: none;
+}
 /*-------------------------------------
         8. Reviews
 --------------------------------------*/
