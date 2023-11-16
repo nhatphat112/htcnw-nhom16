@@ -964,6 +964,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .d-none{
     display: none !important;
 }
+.d-flex{
+    display: flex;
+}
 
 #scroll-Top  .return-to-top i{
     position: relative;
