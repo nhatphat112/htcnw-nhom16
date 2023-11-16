@@ -10,3 +10,11 @@ thead td{
     margin: 5%;
     justify-content: center;
 }
+#title{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
