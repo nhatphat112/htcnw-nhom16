@@ -96,5 +96,5 @@ async function writeJson(jsonObject){
 function forward(filename){
     setTimeout(function(){
         window.location.href=filename
-    },3000)
+    },1000)
 }

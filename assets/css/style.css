@@ -1080,6 +1080,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .d-flex{
     display: flex;
 }
+.warning{
+    color: red;
+}
+.row{
+    flex-wrap: wrap;
+}
 
 #scroll-Top  .return-to-top i{
     position: relative;
