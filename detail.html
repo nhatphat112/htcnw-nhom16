@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
-        <title>Product</title>
+        <title>Detail Product</title>
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/logo.jpg"/>
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/linearicons.css">
@@ -53,31 +53,16 @@
 			</div>
 		    <div class="clearfix"></div>
 		</section>
-		<section id="explore" class="explore">
-			<div class="container">
-				<div class="inner">
-					<div id="cart" onclick="directCart()">
-						<img src="assets/images/explore/cart.png" alt="">
-						<h1 class="cartno">0</h1>
-					</div>
-				</div>
-				<div class="section-header">
-					<h2>Product</h2>
-					<p>Electric 2T</p>
-				</div>
-				<div class="control">
-					<button id="button_cat" class="active" type="all">All</button>
-					<button id="button_cat" type="keyboard">Keboard</button>
-					<button id="button_cat" type="loudspeaker">Loudspeaker</button>
-					<button id="button_cat" type="mic">Mic Streaming</button>
-					<button id="button_cat" type="mouse">Mouse</button>
-				</div>
-				<div class="explore-content">
-					<div class="row">
-					</div>
-				</div>
-			</div>
-		</section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" id="detail_sp">
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </section>
 		<footer id="footer"  class="footer">
 			<div class="container">
 				<div class="hm-footer-copyright">
@@ -116,11 +101,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>		     
         <script src="assets/js/custom.js"></script>
 		<script src="assets/js/product.js"></script>
-		<script>
-			function directCart(){
-				location.href = "cart.html";
-			}
-		</script>
     </body>
 	
 </html>
