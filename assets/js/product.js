@@ -48,13 +48,18 @@
 // let sp = {masp:"SP0001", tensp:"Keyboard DareU EK87 490", hinhsp:"assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg", price:"400"}
 
 const arrSP = [
-    {masp:"SP0001",typesp:"keyboard", tensp:"Keyboard DareU EK87 490", hinhsp:"assets/images/explore/key-board-DareU-EK87-490.jpeg", price:"47"},
-    {masp:"SP0002",typesp:"loudspeaker", tensp:"Pioneer DJ DM 50D W-White", hinhsp:"assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg", price:"400"},
-    {masp:"SP0003",typesp:"mic", tensp:"IMMERSE GV60 STREAMING MIC", hinhsp:"assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png", price:"600"},
-    {masp:"SP0004",typesp:"mouse", tensp:"Pauroty Gaming Mouse RGB Wired Ergonomic", hinhsp:"assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg", price:"25"},
-    {masp:"SP0005",typesp:"loudspeaker", tensp:"KRK Rokit 7 g4", hinhsp:"assets/images/explore/krk.png", price:"700"},
-    {masp:"SP0006",typesp:"loudspeaker", tensp:"Edfifier W820NB White Bluetooth", hinhsp:"./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg", price:"1k"},
-
+    {masp:"SP0001",typesp:"keyboard", tensp:"Keyboard DareU EK87 490", hinhsp:["assets/images/explore/key-board-DareU-EK87-490.jpeg",
+    "assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png","assets/images/explore/key-board-DareU-EK87-490.jpeg"], price:"47"},
+    {masp:"SP0002",typesp:"loudspeaker", tensp:"Pioneer DJ DM 50D W-White", hinhsp:["assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg","assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg",
+    "assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg"], price:"400"},
+    {masp:"SP0003",typesp:"mic", tensp:"IMMERSE GV60 STREAMING MIC", hinhsp:["assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png",
+    "assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png","assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png"], price:"600"},
+    {masp:"SP0004",typesp:"mouse", tensp:"Pauroty Gaming Mouse RGB Wired Ergonomic", hinhsp:["assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg",
+    "assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg","assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg"], price:"25"},
+    {masp:"SP0005",typesp:"loudspeaker", tensp:"KRK Rokit 7 g4", hinhsp:["assets/images/explore/krk.png","assets/images/explore/krk.png",
+    "assets/images/explore/krk.png"], price:"700"},
+    {masp:"SP0006",typesp:"loudspeaker", tensp:"Edfifier W820NB White Bluetooth", hinhsp:["./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg",
+    "./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg","./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg"], price:"1k"},
 ];
 
 var str = "";
@@ -64,7 +69,7 @@ for (let i = 0; i < arrSP.length; i++){
     <div class="col-md-4 col-sm-6" id="product" type="${arrSP[i].typesp}">
         <div class="single-explore-item">
             <div class="single-explore-img">
-                <img src="${arrSP[i].hinhsp}" type="${arrSP[i].typesp}" height="25" alt="explore image">
+                <img src="${arrSP[i].hinhsp[0]}" type="${arrSP[i].typesp}" height="25" alt="explore image">
                 <div class="single-explore-img-info">
                     <button onclick="window.location.href='#'">best rated</button>
                     <div class="single-explore-image-icon-box">
@@ -150,10 +155,14 @@ function addCart(objSP){
     localStorage.setItem("totalqty", soluong + "");
     localStorage.setItem("myCart", JSON.stringify(arrCart))
 }
+function directCart(){
+    location.href = "cart.html";
+}
+
 
 function showdetail(objSP){
     console.log(objSP);
-    window.localStorage.setItem("sanpham", objSP);
+    window.localStorage.setItem("sanpham", objSP)
     location.href = "detail.html";
 }
 

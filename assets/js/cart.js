@@ -18,7 +18,7 @@ arrCart.forEach(item => {
                         ${item.sp.tensp}
                     </td>
                     <td>
-                        <img src="${item.sp.hinhsp}" alt="" width="50px" height="50px">
+                        <img src="${item.sp.hinhsp[0]}" alt="" width="50px" height="50px">
                     </td>
                     <td>${item.sp.price}$</td>
                     <td>

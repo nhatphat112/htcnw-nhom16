@@ -49,20 +49,44 @@
 			                </ul>
 			            </div>
 			        </div>
+                    <div class="inner">
+                        <div id="cart">
+                            <img src="assets/images/explore/cart.png" alt="">
+                            <h1 class="cartno">0</h1>
+                        </div>
+                    </div>
 			    </nav>
 			</div>
 		    <div class="clearfix"></div>
 		</section>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8" id="detail_sp">
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
-            </div>
-        </section>
+        <section id="explore" class="explore">
+			<div class="container">
+				<div class="section-header" style="margin-top: -50px; margin-bottom: 50px;">
+					<h2>Detail</h2>
+				</div>
+				<div class="container" style="height: 240px; max-height: 400px;">
+					<div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-5">
+                            <div class="innerDetail">
+                                <img class="imagemain" src="" alt="">
+                                <div class="thumbnail">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="innerDetailinfo">
+                                <h1 class="productname">Name</h1>
+                                <h2 class="productprice">400$</h2>
+                                <button class="btnAdddetail">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer id="footer"  class="footer">
 			<div class="container">
 				<div class="hm-footer-copyright">
@@ -102,5 +126,19 @@
         <script src="assets/js/custom.js"></script>
 		<script src="assets/js/product.js"></script>
     </body>
-	
+    <script>
+        let objSP = JSON.parse(localStorage.getItem("sanpham"));
+        document.querySelector(".imagemain").src = `${objSP.hinhsp[0]}`;
+        let str_img = ""
+        for (let i = 0; i < objSP.hinhsp.length; i++){
+            str_img += `<img src="${objSP.hinhsp[i]}" alt="" onclick="changeImg(this.src);">`;
+        }
+        document.querySelector(".thumbnail").innerHTML = str_img;
+        document.querySelector(".productname").innerText = objSP.tensp;
+        document.querySelector(".productprice").innerText = objSP.price +"$";
+        
+        function changeImg(srcImg) {
+            document.querySelector(".imagemain").src = srcImg;
+        }
+    </script>
 </html>
