@@ -658,10 +658,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .description{
     margin-top: 40px;
-    color: #63686d;
-    font-size: 14px;
+    color: #8c8f92;
+    font-size: 13.5px;
     height: 65px;
-    font-weight: 300;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+}
+.categoripd{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: initial;
+    color: #8c8f92;
     font-family: 'Roboto', sans-serif;
 }
 .productprice{
@@ -679,7 +686,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     /* margin-left: 10px; */
     border-radius: 10%;
     float: left;
-    margin-top: 100px;
+    margin-top: 70px;
     font-size: 18px;
 }
 .btnAdddetail:hover{
@@ -1048,12 +1055,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .d-flex{
     display: flex;
-}
-.warning{
-    color: red;
-}
-.row{
-    flex-wrap: wrap;
 }
 
 #scroll-Top  .return-to-top i{

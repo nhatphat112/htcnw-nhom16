@@ -70,23 +70,6 @@ for (let i = 0; i < arrSP.length; i++){
         <div class="single-explore-item">
             <div class="single-explore-img">
                 <img src="${arrSP[i].hinhsp[0]}" type="${arrSP[i].typesp}" height="25" alt="explore image">
-                <div class="single-explore-img-info">
-                    <button onclick="window.location.href='#'">best rated</button>
-                    <div class="single-explore-image-icon-box">
-                        <ul>
-                            <li>
-                                <div class="single-explore-image-icon">
-                                    <i class="fa fa-arrows-alt"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-explore-image-icon">
-                                    <i class="fa fa-bookmark-o"></i>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="single-explore-txt bg-theme-1">
                 <h2><a href="#">${arrSP[i].tensp}</a></h2>
@@ -95,7 +78,7 @@ for (let i = 0; i < arrSP.length; i++){
                         Price
                         <span class="explore-price">${arrSP[i].price}$</span>
                     </span>
-                        <a href="#">Keyboard</a>
+                        <a href="#">${arrSP[i].typesp}</a>
                 </p>
                 <div class="explore-open-close-part">
                     <div class="row">
