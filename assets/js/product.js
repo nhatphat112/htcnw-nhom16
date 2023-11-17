@@ -48,18 +48,18 @@
 // let sp = {masp:"SP0001", tensp:"Keyboard DareU EK87 490", hinhsp:"assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg", price:"400"}
 
 const arrSP = [
-    {masp:"SP0001",typesp:"keyboard", tensp:"Keyboard DareU EK87 490", hinhsp:["assets/images/explore/key-board-DareU-EK87-490.jpeg",
-    "assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png","assets/images/explore/key-board-DareU-EK87-490.jpeg"], price:"47"},
-    {masp:"SP0002",typesp:"loudspeaker", tensp:"Pioneer DJ DM 50D W-White", hinhsp:["assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg","assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg",
-    "assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg"], price:"400"},
+    {masp:"SP0001",typesp:"keyboard", tensp:"Keyboard DareU EK87 490", hinhsp:["assets/images/explore/ek87-1.jpg",
+    "assets/images/explore/ek87-4.jpg","assets/images/explore/ek87-3.jpg"], price:"47", mota:"EK87 Gaming Keyboard already have Keys Combination Function that can be activated by pressing FN key. You can change the modes of rainbow lighting, turn on or turn off the rainbow lighting, speed up or down, and many more function."},
+    {masp:"SP0002",typesp:"loudspeaker", tensp:"Pioneer DJ DM 50D W-White", hinhsp:["assets/images/explore/e2-Pioneer-DJ-DM-50D-W-White-7630.jpg","assets/images/explore/dj-w-white-1.jpg",
+    "assets/images/explore/dj-w-white-2.jpg"], price:"400", mota:"DJs looking for a pair of studio speakers will be thrilled with the white Pioneer DJ DM-50D, a pair of high-quality studio monitors with DSP that include a DJ/Production switch, providing two distinct performance articulations for their respective applications—all from a single set of speakers."},
     {masp:"SP0003",typesp:"mic", tensp:"IMMERSE GV60 STREAMING MIC", hinhsp:["assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png",
-    "assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png","assets/images/explore/e3-IMMERSE-GV60-STREAMING-MIC.png"], price:"600"},
-    {masp:"SP0004",typesp:"mouse", tensp:"Pauroty Gaming Mouse RGB Wired Ergonomic", hinhsp:["assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg",
-    "assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg","assets/images/explore/e4-Pauroty-Gaming-Mouse-RGB-Wired-Ergonomic.jpg"], price:"25"},
-    {masp:"SP0005",typesp:"loudspeaker", tensp:"KRK Rokit 7 g4", hinhsp:["assets/images/explore/krk.png","assets/images/explore/krk.png",
-    "assets/images/explore/krk.png"], price:"700"},
-    {masp:"SP0006",typesp:"loudspeaker", tensp:"Edfifier W820NB White Bluetooth", hinhsp:["./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg",
-    "./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg","./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg"], price:"1000"},
+    "assets/images/explore/mic-2.png","assets/images/explore/mic-3.png"], price:"600", mota:"GV60 sets itself apart from other streaming microphones by incorporating all the core features streamers and content creators want: high-resolution sample rate, versatile pickup patterns, real-time monitoring, and plug & play for ease of use."},
+    {masp:"SP0004",typesp:"mouse", tensp:"Pauroty Gaming Mouse RGB Wired", hinhsp:["assets/images/explore/mouse-1.jpg",
+    "assets/images/explore/mouse-3.jpg","assets/images/explore/mouse-2.jpg"], price:"25", mota:"Help you reduce hand fatigue during long gaming sessions. The matte texture is delicate, sweat-proof, and dust-proof, especially suitable for professional computer gamers. 🔮【Customizable RGB Backlight】The bottom light button of the wired gaming mouse enables you to quickly switch among 7 lighting modes."},
+    {masp:"SP0005",typesp:"loudspeaker", tensp:"KRK Rokit 7 g4", hinhsp:["assets/images/explore/krk-1.jpg","assets/images/explore/krk-2.jpg",
+    "assets/images/explore/krk-3.jpg"], price:"700", mota:"The ROKIT 7 G4 was built from high-grade materials, and it shows. The extreme rigidity and impressive tensile strength-to-weight ratio of its Kevlar drivers ensure low-distortion sound reproduction across the entire frequency range. Its enclosure minimizes unwanted resonance, giving you spot-on low-end performance."},
+    {masp:"SP0006",typesp:"loudspeaker", tensp:"Edfifier W820NB White Bluetooth", hinhsp:["./assets/images/explore/tainghe-1.jpg",
+    "./assets/images/explore/tainghe-3.jpg","./assets/images/explore/tainghe-2.jpg"], price:"1000", mota:"The W820NB headphones have hybrid ANC technology that reduces noise by up to 38dB. This amplifies your music listening experience while cutting out unwanted noise."},
 ];
 
 var str = "";
