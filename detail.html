@@ -50,7 +50,7 @@
 			            </div>
 			        </div>
                     <div class="inner">
-                        <div id="cart">
+                        <div id="cart" onclick="directCart()">
                             <img src="assets/images/explore/cart.png" alt="">
                             <h1 class="cartno">0</h1>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="col-sm-2"></div>
                         <div class="col-sm-5">
                             <div class="innerDetail">
-                                <img class="imagemain" src="" alt="">
+                                <img id="image_zoom" class="imagemain" src="" alt="">
                                 <div class="thumbnail">
 
                                 </div>
@@ -79,7 +79,7 @@
                             <div class="innerDetailinfo">
                                 <h1 class="productname">Name</h1>
                                 <h2 class="productprice">400$</h2>
-                                <button class="btnAdddetail">Add Cart</button>
+                                <button class="btnAdddetail" onclick='addCart(`${obj}`)'>Add Cart</button>
                             </div>
                         </div>
                         <div class="col-sm-2"></div>
@@ -131,7 +131,7 @@
         document.querySelector(".imagemain").src = `${objSP.hinhsp[0]}`;
         let str_img = ""
         for (let i = 0; i < objSP.hinhsp.length; i++){
-            str_img += `<img src="${objSP.hinhsp[i]}" alt="" onclick="changeImg(this.src);">`;
+            str_img += `<img src="${objSP.hinhsp[i]}" alt="" id="image_zoom" onclick="changeImg(this.src);">`;
         }
         document.querySelector(".thumbnail").innerHTML = str_img;
         document.querySelector(".productname").innerText = objSP.tensp;

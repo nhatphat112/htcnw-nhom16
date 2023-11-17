@@ -59,7 +59,7 @@ const arrSP = [
     {masp:"SP0005",typesp:"loudspeaker", tensp:"KRK Rokit 7 g4", hinhsp:["assets/images/explore/krk.png","assets/images/explore/krk.png",
     "assets/images/explore/krk.png"], price:"700"},
     {masp:"SP0006",typesp:"loudspeaker", tensp:"Edfifier W820NB White Bluetooth", hinhsp:["./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg",
-    "./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg","./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg"], price:"1k"},
+    "./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg","./assets/images/explore/e6-Edfifier-W820NB-White-Bluetooth.jpg"], price:"1000"},
 ];
 
 var str = "";
@@ -115,7 +115,6 @@ for (let i = 0; i < arrSP.length; i++){
     </div>
     `;
 }
-document.querySelector('.explore-content').innerHTML = str;
 
 let soluong = localStorage.getItem("totalqty");
 if(soluong == null){
@@ -166,6 +165,8 @@ function showdetail(objSP){
     location.href = "detail.html";
 }
 
+//hiển thị list product in menu
+document.querySelector('.explore-content').innerHTML = str;
 
 
 //Lọc sản phẩm
@@ -193,30 +194,3 @@ btnList.forEach(btn=>{
         })
     })
 })
-
-//Detail
-
-// var imgList = document.querySelectorAll('#product')
-// var explore = document.querySelector('.explore-content')
-// var btnList = document.querySelectorAll('button')
-// function activeButton(btnActive){
-//     btnList.forEach(btn=>{
-//         btn.classList.remove('active')
-//     })
-//     btnActive.classList.add('active')
-// }
-
-// btnList.forEach(btn=>{
-//     btn.addEventListener('click', e=>{
-//         activeButton(e.currentTarget)
-//         let type = e.currentTarget.getAttribute('type')
-//         imgList.forEach(img=>{
-//             let foodType = img.getAttribute('type')
-//             if(type == 'all' || foodType == type){
-//                 img.classList.remove('hide')
-//             }else{
-//                 img.classList.add('hide')
-//             }
-//         })
-//     })
-// })
