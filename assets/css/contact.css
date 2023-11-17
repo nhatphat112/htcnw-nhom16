@@ -30,6 +30,9 @@
     font-size: 14px;
 
 }
+.warning{
+    color: red !important;
+}
 .btn-submit button:hover{
    background-color: rgb(161, 15, 15);
 }

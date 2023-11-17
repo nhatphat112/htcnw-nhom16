@@ -150,18 +150,23 @@
                         id="name"
                         placeholder="Name"
                       />
+                      <span id="name-required" class="warning"></span>
                       <input
                         type="email"
                         name=""
                         id="email"
                         placeholder="Email address"
+                        
                       />
+                      <span id="email-required" class="warning"></span>
                       <input
                         type="text"
                         name=""
                         id="subject"
                         placeholder="Subject"
                       />
+                      <span id="subject-required" class="warning"></span>
+
                     </div>
                     <div class="item right-list-item col-lg-6 col-sm-12">
                       <textarea
@@ -171,9 +176,11 @@
                         placeholder="Message"
                         rows="10"
                       ></textarea>
+                      <span id="message-required" class="warning"></span>
+
                     </div>
                     <div class="btn-submit col-lg-12 col-md-12">
-                      <button type="button">Submit</button>
+                      <button type="button" id="btn-submit">Submit</button>
                     </div>
                   </div>
                 </form>
@@ -245,10 +252,12 @@
 
     <!--slick.min.js-->
     <script src="assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootbox.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!--Custom JS-->
+    <script src="./assets//js/contact.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="./assets/js/product.js"></script>
 
