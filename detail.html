@@ -79,6 +79,7 @@
                             <div class="innerDetailinfo">
                                 <h1 class="productname">Name</h1>
                                 <h2 class="productprice">400$</h2>
+								<h6 class="description">abc</h6>
                                 <button class="btnAdddetail" onclick='addCart(`${obj}`)'>Add Cart</button>
                             </div>
                         </div>
@@ -136,6 +137,7 @@
         document.querySelector(".thumbnail").innerHTML = str_img;
         document.querySelector(".productname").innerText = objSP.tensp;
         document.querySelector(".productprice").innerText = objSP.price +"$";
+		document.querySelector(".description").innerText = objSP.mota +"$";
         
         function changeImg(srcImg) {
             document.querySelector(".imagemain").src = srcImg;
